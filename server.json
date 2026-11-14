@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.trymithrandir/mithrandir",
+  "title": "Mithrandir",
+  "description": "Company memory in your own cloud for every AI agent, within each person's own access.",
+  "version": "0.1.21",
+  "websiteUrl": "https://trymithrandir.com",
+  "repository": {
+    "url": "https://github.com/MithrandirAI/mithrandir-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{host}/mcp",
+      "variables": {
+        "host": {
+          "description": "Your Mithrandir deployment's address, for example mithrandir.corp.example.com",
+          "isRequired": true
+        }
+      }
+    }
+  ]
+}
